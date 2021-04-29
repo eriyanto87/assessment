@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+h1, h2, h3 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 header {
     display: flex; 
     align-items: center;
@@ -5,6 +17,18 @@ header {
 
 i {
     margin-right: 10px;
+}
+
+.go-back { 
+    display:flex; 
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: solid 2px #d0d0d0;
+}
+
+.go-back a { 
+    text-decoration: none;
+    color: black;
 }
 
 .hamburger {
@@ -36,4 +60,45 @@ i {
       max-width: 30%;
       height: auto;
   }
-  
+
+  .menu-bottom { 
+    background-color: #F4F4F4;
+    height: 100vh;
+    padding: 10px 15px;
+  }
+
+  .menu-bottom-items {
+    display: flex; 
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .menu-header { 
+      display:flex; 
+      justify-content: space-between;
+      padding: 10px 15px;
+      background: black;
+  }
+
+  .menu-header h3 {
+      font-size: 18px; 
+      color: white;
+  }
+
+  .menu-items {
+    display:flex; 
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: solid 2px #d0d0d0;
+  }
+
+  .menu-items {
+      font-size: 18px; 
+  }
+
+  .menu-items a {
+      text-decoration: none;
+      color: black;
+  }
+ 
+
