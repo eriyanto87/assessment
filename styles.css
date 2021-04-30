@@ -6,16 +6,24 @@
     box-sizing: border-box;
     }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Noto Sans', sans-serif;
 }
 
 header {
     display: flex; 
     align-items: center;
+    border-bottom: solid 2px #d0d0d0;
+    box-shadow: 5px 5px 3px 5px #404040;
+    padding: 10px
 }
 
-i {
+.fa-search, .fa-user {
+    margin-right: 10px;
+}
+
+.cart { 
+    display:inline-block;
     margin-right: 10px;
 }
 
@@ -26,14 +34,19 @@ i {
     border-bottom: solid 2px #d0d0d0;
 }
 
+.go-back h3 { 
+    margin-right: 10px;
+}
+
 .go-back a { 
     text-decoration: none;
     color: black;
 }
 
 .hamburger {
-    width: 38px;
-    height: 38px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -57,6 +70,7 @@ i {
   }
 
   .logo {
+      margin-top: 8px;
       max-width: 30%;
       height: auto;
   }
@@ -100,5 +114,45 @@ i {
       text-decoration: none;
       color: black;
   }
- 
 
+  .safety-badge { 
+      height: 18px;
+      width: 18px;
+      margin-right: 2px;
+  }
+
+  .solutions-bottom { 
+        background-color: #F4F4F4;
+        height: 100vh;
+  }
+ 
+  .solutions-bottom-items { 
+    display:flex; 
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: solid 2px #d0d0d0;
+  }
+
+  .usa-flag { 
+      width: 23px; 
+      height: 30px;
+      margin-right: 5px;
+  }
+
+@media all and (min-width: 800px) { 
+    .content { 
+        background-color: #CCCCCC;
+        height: 100vh;
+    }
+
+    .hamburger { 
+        display: none;
+    }
+
+
+  .logo {
+    margin-bottom: 12px;
+    max-width: 15%;
+    height: auto;
+}
+}
