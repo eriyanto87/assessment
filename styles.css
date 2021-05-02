@@ -16,6 +16,10 @@
     display: none;
 }
 
+.desktop-search-icon {
+    display: none;
+}
+
 /* fonts */
 h1, h2, h3, h4 {
     font-family: 'Noto Sans', sans-serif;
@@ -171,14 +175,17 @@ header {
         height: 100vh;
     }
 
+    .desktop-icons {
+        margin-left: auto;
+    }
+
     .desktop-menu-items { 
         display: flex;
-        justify-content: space-between;
     }
     
     .desktop-search-icon { 
-       display: flex;
-        margin-left: auto;
+        display: flex;
+       margin-left: auto;
     }
 
     .desktop-view { 
@@ -198,6 +205,15 @@ header {
 
     .desktop-menu h4 { 
         margin-left: 20px;
+    }
+
+    .safety-badge, .fa-question-circle, .fa-map-marker-alt, .fa-user, .fa-shopping-cart
+    {
+        color:white;
+    }
+
+    .fa-shopping-cart {
+        background-color: #b81830;
     }
 
     .hamburger, .arrow { 
