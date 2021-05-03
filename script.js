@@ -3,15 +3,16 @@
   let solutions = document.getElementById('solutions');
   let contentTwo = document.getElementById('content-2');
   let solutionsMenu = document.getElementById('hidden');
-  let a = document.getElementById('red');
+  let header = document.getElementById('header');
 
-//menu pop up
+//menu pop up for desktop view
 function desktopMenuPopUp() {
     desktopMenuContent.classList.toggle('active');
     contentTwo.classList.toggle('content-two-active');
     solutions.classList.toggle('solutions-active');
     solutionsMenu.classList.toggle('hidden');
     solutions.classList.toggle('red');
+    header.classList.toggle('header');
 }   
 
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
 
+/* mobile first */
 * {
     padding: 0;
     margin: 0;
@@ -10,19 +11,6 @@
 .content {
     background-color: black; 
     height: 100vh;
-}
-
-/* desktop-view */
-.desktop-view { 
-    display: none;
-}
-
-.desktop-menu { 
-    display: none;
-}
-
-.desktop-search {
-    display: none;
 }
 
 /* fonts */
@@ -41,7 +29,7 @@ p {
 header {
     display: flex; 
     align-items: center;
-    border-bottom: inset 2px #d0d0d0;
+    border-bottom: solid 2px #404040;
     height: auto;
     padding: 5px 0px;
     }
@@ -182,10 +170,15 @@ header {
       margin-right: 5px;
   }
 
-@media all and (min-width: 800px) { 
+/* hiding some desktop-view contents on mobile */
+.desktop-view, .desktop-menu, .desktop-search  { 
+    display: none;
+}
+
+/* desktop view */
+@media all and (min-width: 800px) {
     .content {
         background-color: #CCCCCC;
-        box-shadow: 5px 5px 5px 6px #ccc;
     }
 
     .desktop-view {
@@ -269,6 +262,7 @@ header {
 }
 
     .active {
+        border-top: none;
         background-color: white;
         padding: 30px 0px 255px 50px; 
         height: 100%;
@@ -292,6 +286,14 @@ header {
         text-decoration: underline #B81830;
         text-decoration-thickness: 3px;
         text-underline-offset: 1.48em;
+    }
+    
+    .shadow-effect {
+        box-shadow: 3px 3px 5px 5px #D0D0D0;
+    }
+
+    .header {
+        border-bottom: solid 1px #D0D0D0;
     }
 
 }
