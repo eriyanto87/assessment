@@ -9,12 +9,12 @@
 //menu pop up for desktop view
 function desktopMenuPopUp() {
     desktopMenuContent.classList.toggle('active');
+    desktopMenuContent.classList.toggle('content');
     contentTwo.classList.toggle('content-two-active');
+    solutions.classList.toggle('red');
     solutions.classList.toggle('solutions-active');
     solutionsMenu.classList.toggle('hidden');
-    solutions.classList.toggle('red');
     header.classList.toggle('header');
-    desktopMenuContent.classList.toggle('content');
 }   
 
 
