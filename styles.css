@@ -7,6 +7,11 @@
     box-sizing: border-box;
     }
 
+.content {
+    background-color: black; 
+    height: 100vh;
+}
+
 /* desktop-view */
 .desktop-view { 
     display: none;
@@ -16,7 +21,7 @@
     display: none;
 }
 
-.desktop-search-icon {
+.desktop-search {
     display: none;
 }
 
@@ -37,6 +42,7 @@ header {
     display: flex; 
     align-items: center;
     border-bottom: solid 2px #d0d0d0;
+    height: 100px;
     padding: 10px
 }
 
@@ -90,6 +96,14 @@ header {
   .hamburger-line:not(:first-child) {
     margin-top: 3px;
   }
+
+  .hidden {
+    display: none;
+}
+
+  ul h4 {
+    padding-bottom: 30px;
+}
 
   .icons {
       margin-left: auto;
@@ -170,9 +184,8 @@ header {
         box-shadow: 5px 5px 3px 5px #404040;
     }
 
-    .content { 
+    .content {
         background-color: #CCCCCC;
-        height: 100vh;
     }
 
     .desktop-icons {
@@ -183,9 +196,14 @@ header {
         display: flex;
     }
     
-    .desktop-search-icon { 
-        display: flex;
-       margin-left: auto;
+    .desktop-search { 
+       display: flex;
+       position: absolute;
+       right: 10px;
+    }
+
+    .desktop-search p {
+        margin-right: 10px;
     }
 
     .desktop-view { 
@@ -196,7 +214,7 @@ header {
 
     .desktop-view h4 { 
         color: white;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .desktop-menu {
@@ -204,16 +222,24 @@ header {
     }
 
     .desktop-menu h4 { 
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
-    .safety-badge, .fa-question-circle, .fa-map-marker-alt, .fa-user, .fa-shopping-cart
+    .desktop-shield-badge {
+        height: 20px;
+        width: 20px;
+        background-color: white;
+    }
+
+  .fa-question-circle, .fa-map-marker-alt, .fa-user, .fa-shield-check, .fa-shopping-cart
     {
         color:white;
+        margin-left: 10px;
     }
 
     .fa-shopping-cart {
         background-color: #b81830;
+        padding: 10px 0px 10px 10px;
     }
 
     .hamburger, .arrow { 
@@ -226,12 +252,39 @@ header {
 
   .logo {
     margin-bottom: 12px;
-    max-width: 9%;
+    max-width: 10%;
     height: auto;
 }
 
   .usa-flag { 
     margin-left: 10px;
 }
+
+    .active {
+        background-color: white;
+        padding: 30px 0px 255px 50px; 
+        height: 100%;
+    }
+
+    .content-two-active {
+        background-color: #404040;
+        height: 100vh;
+    }
+
+    .solutions-active {
+        color: #B81830;
+        border-spacing: 100px;
+    }
+
+    #solutions {
+        cursor: pointer;
+    }
+
+    .red {
+        /* border-bottom: solid 3px #B81830;  */
+        text-decoration: underline #B81830;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 2.5em;
+    }
 
 }
