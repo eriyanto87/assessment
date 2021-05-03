@@ -29,8 +29,8 @@ p {
 header {
     display: flex; 
     align-items: center;
-    border-bottom: solid 2px #404040;
     height: auto;
+    /* border-bottom: solid 1px #A8A8A8; */
     padding: 5px 0px;
     }
 
@@ -179,6 +179,7 @@ header {
 @media all and (min-width: 800px) {
     .content {
         background-color: #CCCCCC;
+        box-shadow: inset 1px 1px 5px #666666;
     }
 
     .desktop-view {
@@ -285,15 +286,11 @@ header {
     .red {
         text-decoration: underline #B81830;
         text-decoration-thickness: 3px;
-        text-underline-offset: 1.48em;
-    }
-    
-    .shadow-effect {
-        box-shadow: 3px 3px 5px 5px #D0D0D0;
+        text-underline-offset: 1.35em;
     }
 
     .header {
-        border-bottom: solid 1px #D0D0D0;
+        border-bottom-style: none;
+        box-shadow: inset 0px -2px 5px #D0D0D0;
     }
-
 }
