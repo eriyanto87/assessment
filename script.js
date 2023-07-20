@@ -4,7 +4,7 @@
   let contentTwo = document.getElementById('content-2');
   let solutionsMenu = document.getElementById('hidden');
   let header = document.getElementById('header');
-  let content = document.getElementsById('content');
+  // let content = document.getElementsById('content');
 
 //menu pop up for desktop view
 function desktopMenuPopUp() {
