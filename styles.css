@@ -39,6 +39,11 @@ footer {
     bottom: 0px; 
 }
 
+#div-gpt-ad-1689888944550-0 {
+    background: red;
+    width: 100vw;
+}
+
 .fa-map-marker-alt, .fa-question-circle  {
     margin-right: 5px;
 }
