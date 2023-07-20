@@ -34,6 +34,11 @@ header {
     padding: 5px 0px;
     }
 
+footer {
+    position: fixed; 
+    bottom: 0px; 
+}
+
 .fa-map-marker-alt, .fa-question-circle  {
     margin-right: 5px;
 }
