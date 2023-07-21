@@ -40,9 +40,13 @@ footer {
     bottom: 0px; 
 }
 
-#ad-container {
+#div-gpt-ad-1689902121399-0 {
     background: red;
     width: 100vw;
+}
+
+#div-gpt-ad-1689979141787-0 {
+    background: green;
 }
 
 .fa-map-marker-alt, .fa-question-circle  {
