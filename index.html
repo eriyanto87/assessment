@@ -14,17 +14,10 @@
         .defineSlot(
           '/6355419/Travel/Europe/France/Paris', [300, 250], 'banner-ad')
         .addService(googletag.pubads());
+        googletag.defineSlot('/22909270395/StickyTest1', [320, 50], 'ad-container').addService(googletag.pubads());
       googletag.enableServices();
     });
   </script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/22909270395/StickyTest1', [320, 50], 'div-gpt-ad-1689902121399-0').addService(googletag.pubads());
-    // googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
-</script>
   <script src="https://kit.fontawesome.com/b59920bf03.js" crossorigin="anonymous"></script>
 </head>
 
@@ -81,19 +74,19 @@
     </ul>
   </div>
   <footer>
-    <div id="banner-ad" style="width: 500px; height: 250px;">
+    <!-- /22909270395/StickyTest1 -->
+<div id='ad-container' style='width: 300px; height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('ad-container'); });
+  </script>
+</div>
+    <div id="banner-ad" style="width: 320px; height: 50px;">
       <script>
         googletag.cmd.push(function () {
           googletag.display('banner-ad');
         });
       </script>
     </div>
-<!-- /22909270395/StickyTest1 -->
-<div id='div-gpt-ad-1689902121399-0' style='width: 320px; height: 50px;'>
-  <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1689902121399-0'); });
-  </script>
-</div>
   </footer>
   <div id='content-2'></div>
   <script type="text/javascript" src="script.js"></script>

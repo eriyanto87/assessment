@@ -35,11 +35,12 @@ header {
     }
 
 footer {
+    display:flex;
     position: fixed; 
     bottom: 0px; 
 }
 
-#div-gpt-ad-1689902121399-0 {
+#ad-container {
     background: red;
     width: 100vw;
 }
