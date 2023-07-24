@@ -14,9 +14,10 @@
         .defineSlot(
           '/6355419/Travel/Europe/France/Paris', [300, 250], 'banner-ad')
         .addService(googletag.pubads());
-       var adSlot = googletag.defineSlot('/22909270395/StickyTest1', [728, 90], 'div-gpt-ad-1690221434777-0').setTargeting('evi', ['test']).addService(googletag.pubads());
-       adSlot.setTargeting('creativeId', '138434383265');
+       googletag.defineSlot('/22909270395/StickyTest1', [728, 90], 'div-gpt-ad-1690221434777-0').setTargeting('evi', ['test']).addService(googletag.pubads());
+      //  adSlot.setTargeting('creativeId', '138434383265');
     googletag.pubads().enableSingleRequest();
+    googletag.pubads().setForceSafeFrame(true);
     googletag.enableServices();
     })
   </script>
@@ -87,7 +88,7 @@
   googletag.cmd.push(function () {
     googletag.display('banner-ad');
     googletag.display('div-gpt-ad-1690221434777-0');
-    googletag.display('div-gpt-ad-1690221434777-0', { creativeId: '138434383265'})
+    // googletag.display('div-gpt-ad-1690221434777-0', { creativeId: '138434383265'})
   });
  
 </script>
