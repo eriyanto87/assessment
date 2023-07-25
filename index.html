@@ -14,9 +14,9 @@
         .defineSlot(
           '/6355419/Travel/Europe/France/Paris', [300, 250], 'banner-ad')
         .addService(googletag.pubads());
-       googletag.defineSlot('/22909270395/StickyTest1', [728, 90], 'div-gpt-ad-1690221434777-0').setTargeting('evi', ['test']).addService(googletag.pubads());
+       googletag.defineSlot('/22909270395/StickyTest1', [728, 90], 'div-gpt-ad-sticky-test-1').setTargeting('evi', ['test']).addService(googletag.pubads());
       //  adSlot.setTargeting('creativeId', '138434383265');
-      googletag.defineSlot('/22909270395/Test', [728, 90], 'div-gpt-ad-1690230503040-0').setTargeting('evi', ['test']).addService(googletag.pubads());
+      googletag.defineSlot('/22909270395/Test', [728, 90], 'div-gpt-ad-test').setTargeting('evi', ['test']).addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
     })
@@ -78,26 +78,33 @@
   </div>
   <footer>
     <div>
-    <div id="banner-ad" style="width: 300px; height: 250px;"></div>
+    <div id="banner-ad" style="width: 300px; height: 250px;">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('banner-ad');
+        });
+        </script>
+        </div>
     </div>
     <div>
 <!-- /22909270395/StickyTest1
 <div id='div-gpt-ad-1689902121399-0' style='width: 300px; height: 100px;'></div> -->
 <!-- /22909270395/StickyTest1 -->
-<div id='div-gpt-ad-1690221434777-0' style='width: 728px; height: 90px;'>
+<div id='div-gpt-ad-sticky-test-1' style='width: 728px; height: 90px;'>
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display('div-gpt-ad-sticky-test-1');
+    });
+</script>
 </div>
  <!-- /22909270395/Test -->
- <div id='div-gpt-ad-1690230503040-0' style='min-width: 728px; min-height: 90px;'> </div>
-    </div>
+ <div id='div-gpt-ad-test' style='min-width: 728px; min-height: 90px;'> 
 <script>
-  googletag.cmd.push(function () {
-    googletag.display('banner-ad');
-    googletag.display('div-gpt-ad-1690221434777-0');
-    googletag.display('div-gpt-ad-1690230503040-0');
-    // googletag.display('div-gpt-ad-1690221434777-0', { creativeId: '138434383265'})
-  });
- 
+    googletag.cmd.push(function () {
+      googletag.display('div-gpt-test');
+    });
 </script>
+</div>
   </footer>
   <div id='content-2'></div>
   <script type="text/javascript" src="script.js"></script>
