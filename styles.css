@@ -40,6 +40,14 @@ footer {
     bottom: 0px; 
 }
 
+#banner-ad-mobile {
+    display: block;
+}
+
+#banner-ad-desktop {
+    display: none;
+}
+
 #div-gpt-ad-sticky-test-1 {
     background: red;
     width: 100vw;
@@ -192,8 +200,16 @@ footer {
 
 /* desktop view */
 @media all and (min-width: 800px) {
+    #banner-ad-mobile {
+        display: none;
+    }
+    
+    #banner-ad-desktop {
+        display: block;
+    }
+
     .content {
-        background-color: #CCCCCC;
+        background-color: lightcyan;
         box-shadow: inset 1px 1px 5px #666666;
     }
 
