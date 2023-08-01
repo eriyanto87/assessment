@@ -9,11 +9,12 @@
     }
 
 .content {
-    background-color: black; 
+    background: url(./images/pexels-pixabay-33109.jpg);
+    opacity: 0.5; 
     height: 100vh;
 }
 
-/* fonts */
+/* fonts */ 
 h1, h2, h3, h4 {
     font-family: 'Noto Sans', sans-serif;
 }
@@ -24,6 +25,10 @@ h4 {
 
 p {
     font-family: 'Public Sans', sans-serif;
+}
+
+span {
+    color: #fff;
 }
 
 header {
@@ -38,6 +43,14 @@ footer {
     display:flex;
     position: fixed; 
     bottom: 0px; 
+}
+
+.banner-wrapper {
+    width: 100vw;
+}
+
+.banner-ad {
+    margin: 0 auto;
 }
 
 #banner-ad-mobile {
@@ -206,6 +219,10 @@ footer {
     
     #banner-ad-desktop {
         display: block;
+    }
+
+    span {
+        color: #404040;
     }
 
     .content {
