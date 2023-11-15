@@ -47,28 +47,11 @@ footer {
 
 .banner-wrapper {
     width: 100vw;
-    background: rgba(255, 0, 0, .3)
+    background: rgba(242 242 242 / .2)
 }
 
 .banner-ad {
     margin: 0 auto;
-}
-
-#banner-ad-mobile {
-    display: block;
-}
-
-#banner-ad-desktop {
-    display: none;
-}
-
-#div-gpt-ad-sticky-test-1 {
-    background: red;
-    width: 100vw;
-}
-
-#div-gpt-ad-test{
-    background: green!important;
 }
 
 .fa-map-marker-alt, .fa-question-circle  {
@@ -214,14 +197,6 @@ footer {
 
 /* desktop view */
 @media all and (min-width: 800px) {
-    #banner-ad-mobile {
-        display: none;
-    }
-    
-    #banner-ad-desktop {
-        display: block;
-    }
-
     span {
         color: #404040;
     }
